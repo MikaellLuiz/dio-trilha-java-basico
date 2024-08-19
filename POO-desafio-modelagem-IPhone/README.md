@@ -1,18 +1,23 @@
-## Getting Started
+# Desafio POO: Modelagem e Implementação de um Componente iPhone
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto consiste na modelagem e implementação de um componente iPhone que abrange as funcionalidades de Reprodutor Musical, Aparelho Telefônico e Navegador na Internet.
 
-## Folder Structure
+## Estrutura do Projeto
 
-The workspace contains two folders by default, where:
+O projeto contém as seguintes classes:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- **IPhone**: Classe principal que agrega as funcionalidades de reprodutor musical, telefone e navegador.
+- **ReprodutorMusical**: Classe responsável pela reprodução de músicas com métodos como `tocar()`, `pausar()` e `selecionarMusica(String musica)`.
+- **AparelhoTelefonico**: Classe que implementa as funções de telefonia, como `ligar(String numero)`, `atender()` e `iniciarCorreioVoz()`.
+- **NavegadorInternet**: Classe que lida com a navegação na internet, com métodos como `exibirPagina(String url)`, `adicionarNovaAba()` e `atualizarPagina()`.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Como Executar
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+1. Clone o repositório para sua máquina local.
+2. Importe o projeto em sua IDE de preferência.
+3. Compile e execute a classe `IPhone` para simular as funcionalidades implementadas.
 
-## Dependency Management
+## Ferramentas Utilizadas
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Java
+- UML (para a modelagem das classes)
