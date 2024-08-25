@@ -1,18 +1,26 @@
-## Getting Started
+# Banco Digital Orientado a Objetos - Novas Funcionalidades
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é uma extensão do [desafio original](https://github.com/falvojr/lab-banco-digital-oo), onde novas funcionalidades foram adicionadas à solução Orientada a Objetos em Java. O projeto original define um cenário onde um banco oferece aos clientes dois tipos de contas: corrente e poupança, com funcionalidades de depósito, saque e transferência.
 
-## Folder Structure
+## Novas Funcionalidades Implementadas
 
-The workspace contains two folders by default, where:
+### 1. Sistema de Juros para Contas Poupança
+Foi implementado um sistema de juros que aplica automaticamente 5% de juros ao saldo da conta poupança mensalmente.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### 2. Limite de Crédito para Conta Corrente
+Agora, contas correntes possuem um limite de crédito, permitindo que o saldo da conta fique negativo até um determinado valor (limite configurável).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### 3. Relatório e Estatísticas Bancárias
+Foi adicionada a funcionalidade de geração de relatórios que listam todas as contas do banco, com seus respectivos saldos, e calculam o saldo total de todas as contas.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### 4. Histórico de Transações
+Cada conta agora mantém um histórico de transações que inclui saques, depósitos e transferências. O histórico pode ser visualizado a qualquer momento.
 
-## Dependency Management
+### 5. Sistema de Autenticação de Clientes
+Foi implementado um sistema de autenticação para clientes, onde o cliente precisa fornecer uma senha para acessar suas contas. Se a senha estiver correta, a autenticação é bem-sucedida.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Como Executar
+
+1. Clone o repositório original do projeto:
+   ```bash
+   git clone https://github.com/falvojr/lab-banco-digital-oo
