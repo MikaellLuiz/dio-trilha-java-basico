@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Professores</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container form-container">
+    <h1 class="text-center">Avaliação de Professores</h1>
+    <form th:action="@{/avaliacao}" th:object="${avaliacao}" method="post">
+        <div class="mb-3">
+            <label for="nomeProfessor" class="form-label">Nome do Professor</label>
+            <input type="text" class="form-control" id="nomeProfessor" th:field="*{nomeProfessor}" placeholder="Insira o nome do professor" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="comentarios" class="form-label">Comentários</label>
+            <textarea class="form-control" id="comentarios" th:field="*{comentarios}" rows="3" placeholder="Escreva seus comentários" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="nota" class="form-label">Nota</label>
+            <input type="number" class="form-control" id="nota" th:field="*{nota}" min="0" max="10" placeholder="Insira a nota (0-10)" required>
+        </div>
+
+        <button type="submit" class="btn btn-custom w-100">Enviar Avaliação</button>
+    </form>
+</div>
+
+</body>
+</html>

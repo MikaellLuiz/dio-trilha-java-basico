@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DesafioControleFluxo/DesafioControleFluxo.iml" filepath="$PROJECT_DIR$/DesafioControleFluxo/DesafioControleFluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desafios/Desafios.iml" filepath="$PROJECT_DIR$/Desafios/Desafios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO-desafio-modelagem-IPhone/POO-desafio-modelagem-IPhone.iml" filepath="$PROJECT_DIR$/POO-desafio-modelagem-IPhone/POO-desafio-modelagem-IPhone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banco-digital-oo/banco-digital-oo.iml" filepath="$PROJECT_DIR$/banco-digital-oo/banco-digital-oo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootcamp-poo/bootcamp-poo.iml" filepath="$PROJECT_DIR$/bootcamp-poo/bootcamp-poo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conta-banco/conta-banco.iml" filepath="$PROJECT_DIR$/conta-banco/conta-banco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dio-trilha-java-basico.iml" filepath="$PROJECT_DIR$/.idea/dio-trilha-java-basico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-colections/java-colections.iml" filepath="$PROJECT_DIR$/java-colections/java-colections.iml" />
+    </modules>
+  </component>
+</project>

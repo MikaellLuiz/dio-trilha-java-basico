@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Avaliações</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .table-container {
+            margin: 50px auto;
+        }
+        .table-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container table-container">
+    <h1 class="table-title">Avaliações de Professores</h1>
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Professor</th>
+            <th>Comentários</th>
+            <th>Nota</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="avaliacao : ${avaliacoes}">
+            <td th:text="${avaliacao.id}"></td>
+            <td th:text="${avaliacao.nomeProfessor}"></td>
+            <td th:text="${avaliacao.comentarios}"></td>
+            <td th:text="${avaliacao.nota}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="text-center">
+        <a href="/avaliacao" class="btn btn-custom">Nova Avaliação</a>
+    </div>
+</div>
+
+</body>
+</html>
