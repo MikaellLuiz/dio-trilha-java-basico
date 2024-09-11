@@ -78,9 +78,9 @@ Aqui estão as principais dependências utilizadas no projeto, todas configurada
  - Maven instalado
 ## Passos para executar o projeto:
 
-### 1. Clone o repositório:
+### 1. Baixe o projeto:
 ```bash
-git clone https://github.com/MikaellLuiz/avaliacao-professores.git
+dio-trilha-java-basico/avalia-professor
 ```
 ### 2. Navegue até o diretório do projeto:
 ```bash
